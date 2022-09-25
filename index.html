@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmlane - Best movie collections</title>
+
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+        <i class="fa-solid fa-compact-disc"></i> Documentary Club
+      </a>
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+
+        <button class="btn btn-primary">เข้าสู่ระบบ</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">หน้าแรก</a>
+          </li>
+
+          <li>
+            <a href="#doc" class="navbar-link">สารคดี</a>
+          </li>
+
+          <li>
+            <a href="#live" class="navbar-link">ไลฟ์สด</a>
+          </li>
+
+        </ul>
+
+
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Documentary Club</p>
+
+            <h1 class="h1 hero-title">
+              ตามติด <strong>วิถีชีวิต</strong> ชนเผ่าโบราณ แอฟริกาใต้
+            </h1>
+
+            <div class="meta-wrapper">
+
+
+
+              <button id="myBtn" class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span>ดูตอนนี้</span>
+              </button>
+
+            </div>
+
+          </div>
+      </section>
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="closecon"><span class="close">&times;</span></div>
+
+          <p>Some text in the Modal..</p>
+        </div>
+
+      </div>
+
+
+
+      <!-- 
+        - #UPCOMING
+      -->
+
+      <section id="doc" class="upcoming">
+        <div class="container">
+
+          <div class="flex-wrapper">
+
+            <div class="title-wrapper">
+
+
+              <h2 class="h2 section-title">สารคดี</h2>
+            </div>
+
+
+
+          </div>
+
+          <ul class="movies-list  has-scrollbar">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-1.jpg" alt="The Northman movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title"><span style="font-weight: 900; color: rgb(248, 203, 4);">New</span>
+                      ชนเผ่าโบราณ</h3>
+                  </a>
+
+                  <p style="color: #fff">2543</p>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline"><i class="fa-regular fa-high-definition"></i></div>
+
+                  <div class="duration">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <time datetime="PT137M">188 นาที</time>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-2.jpg"
+                      alt="Doctor Strange in the Multiverse of Madness movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">
+                      โลกใหม่ ยีราฟ</h3>
+                  </a>
+
+                  <p style="color: #fff">2553</p>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline"><i class="fa-regular fa-high-definition"></i></div>
+
+                  <div class="duration">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <time datetime="PT137M">188 นาที</time>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-3.jpg" alt="Memory movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">
+                      บุกห้องครัว ที่เยอรมัน</h3>
+                  </a>
+
+                  <p style="color: #fff">2565</p>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline"><i class="fa-regular fa-high-definition"></i></div>
+
+                  <div class="duration">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <time datetime="PT137M">188 นาที</time>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-4.jpg"
+                      alt="The Unbearable Weight of Massive Talent movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">
+                      เล่าตำนาน อารยธรรมจีนโบราณ</h3>
+                  </a>
+
+                  <p style="color: #fff">2565</p>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline"><i class="fa-regular fa-high-definition"></i></div>
+
+                  <div class="duration">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <time datetime="PT137M">320 นาที</time>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section id="live" class="service">
+        <div class="container">
+
+          <div class="service-banner">
+            <figure>
+              <img src="./assets/images/service-banner.jpg" alt="HD 4k resolution! only $3.99">
+            </figure>
+
+
+            <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="service-content">
+
+            <p class="service-subtitle">Our Services</p>
+
+            <h2 class="h2 service-title">Download Your Shows Watch Offline.</h2>
+
+            <p class="service-text">
+              Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of
+              passages of lorem
+              Ipsum available, but the majority have suffered alteration in some injected humour.
+            </p>
+
+            <ul class="service-list">
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="tv"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Enjoy on Your TV.</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="videocam"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Watch Everywhere.</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="footer-bottom">
+        <div class="container">
+
+          <p class="copyright">
+            &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          </p>
+
+
+        </div>
+      </div>
+
+      </footer>
+
+
+
+
+
+      <!-- 
+    - #GO TO TOP
+  -->
+
+      <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up"></ion-icon>
+      </a>
+
+
+
+
+
+      <!-- 
+    - custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+
+      <!-- 
+    - ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
