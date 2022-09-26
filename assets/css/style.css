@@ -61,6 +61,38 @@
   font-family: 'Kanit', sans-serif;
 }
 
+@keyframes example {
+  0% {
+    background-color: rgb(0, 0, 0);
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: green;
+    left: 100px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: rgb(0, 0, 0);
+    left: 100px;
+    top: 100px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 100px;
+  }
+
+  100% {
+    background-color: rgb(0, 0, 0);
+    left: 0px;
+    top: 0px;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -105,7 +137,9 @@ body.active {
   overflow: hidden;
 }
 
-
+.navbar-list a {
+  font-size: 1.3rem;
+}
 
 
 
@@ -627,11 +661,11 @@ body.active {
 .service-banner {
   position: relative;
   margin-bottom: 50px;
-  max-width: max-content;
+  max-width: 50%;
 }
 
 .service-banner img {
-  width: 100%;
+  width: 80%;
 }
 
 .service-btn {
@@ -659,12 +693,10 @@ body.active {
 }
 
 .service-subtitle {
-  position: relative;
+
   color: var(--gainsboro);
   font-size: var(--fs-11);
   font-weight: var(--fw-500);
-  text-transform: uppercase;
-  letter-spacing: 1px;
   padding-left: 50px;
   margin-bottom: 10px;
 }
@@ -1829,7 +1861,15 @@ body.active {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: hsl(128, 48%, 42%);
   text-decoration: none;
   cursor: pointer;
+  animation-iteration-count: infinite;
+}
+
+.animetion {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
 }
